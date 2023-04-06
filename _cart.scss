@@ -1,0 +1,218 @@
+/* Корзина */
+@keyframes bounce {
+	0%, 20%, 60%, 100% {
+		transform: translateY(0);
+		transform: translateY(0);
+	}
+
+	40% {
+		transform: translateY(-20px);
+		transform: translateY(-20px);
+	}
+
+	80% {
+		transform: translateY(-10px);
+		transform: translateY(-10px);
+	}
+}
+.top-cart {
+    height: 400px;
+    background-image: url(img/topcart.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.heading-big{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 70px;
+    color: $color-text;
+    margin-top: 127px;
+}
+
+.cart{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    gap:32px;
+    margin-top: 64px;
+    &__name-box{
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 14px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        color: #000000;
+    }
+    &__item{
+        border-top: 0.5px solid #CACDD8;
+        padding-top: 25px;
+        padding-bottom: 32px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    &__left{
+        display: flex;
+        gap:32px;
+    }
+    &__img{
+        // object-fit: contain;
+        // object-position: top;
+        align-self: flex-start;
+    }
+    &__info{
+        width: 276px;
+        display: flex;
+        flex-direction: column;
+        gap:14px;
+    }
+    &__info-name{
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 29px;
+        color: #000000;
+    }
+    &__info-text{
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        color: #888888;
+    }
+    &__info-price{
+        margin-top: 2px;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+        color: #050505;
+    }
+    &__link-box{
+        display: flex;
+        gap: 30px;
+    }
+    &__link-box-item{
+        margin-top: 1px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 210%;
+        text-align: center;
+        text-decoration-line: underline;
+        color: #000000;
+    }
+    &__link-box-item:hover{
+        color: #888888;
+        text-decoration: none;
+    }
+    &__item-count{
+        padding: 0 10px;
+        font-family: 'Poppins';
+        background: #F7F6F6;
+        border-radius: 6px;
+        border: none;
+        outline: none;
+        width: 71px;
+        height: 51px;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 210%;
+        text-align: center;
+        color: #000000;
+    }
+    &__form{
+        height: 556px;
+        background: #F7F6F6;
+        border-radius: 20px;
+        grid-column: span 4;
+        grid-row: span 2;
+        text-align: center;
+    }
+    &__content{
+        grid-column: span 8;
+    }
+    &__form-title{
+        margin-top: 42px;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 36px;
+        color: #000000;
+    }
+    &__form-box{
+        margin-top: 35px;
+        display: flex;
+        flex-direction: column;
+        gap:18px;
+    }
+    &__form-input{
+        width: 288px;
+        margin-left: 27px;
+        margin-bottom: 23px;
+        border:none;
+        outline:none;
+        background-color: #F7F6F6;
+        border-bottom: 1px solid #CACDD8;
+    }
+    &__form-input::placeholder{
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        color: #000000;
+    }
+    &__form-price{
+        margin-top: 23px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 29px;
+        color: #000000;
+    }
+    &__form-button{
+        margin-left: 45px;
+        width: 290px;
+        height: 41px;
+        background-color: #F7F6F6;
+        border-radius: 50px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        color: #000000;
+        transition: all .3s;
+        animation: bounce 1.3s ease 1s 3;
+        
+    }
+    &__form-button:hover{
+        background-color:#000000;
+        color:#fff;
+    }
+    &__buttons{
+        grid-column: span 5;
+        display: flex;
+        gap:5px;
+    }
+    &__button{
+        width: 200px;
+        height: 37px;
+        border: 1px solid #000000;
+        border-radius: 50px;
+        background-color: #fff;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        color: #020202;
+        transition: all .3s;
+    }
+    &__button:hover{
+        background-color:#000000;
+        color:#fff;
+    }
+}
